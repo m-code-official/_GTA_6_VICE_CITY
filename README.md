@@ -1,10 +1,10 @@
-# Vice City welcome pages
+# Dual-domain static contact pages
 
-Static nginx site serving two hostnames from one container:
+Single nginx container serving two hostnames:
 
 | Domain | Page |
 | --- | --- |
-| `welcome-to-vice-city.com` | Classic Vice City landing (EN) |
-| `welcome-to-vice-city-vi.com` | GTA VI chapter landing (FR) |
+| `www.welcome-to-vice-city.com` | Contact landing |
+| `www.welcome-to-vice-city-vi.com` | Contact landing |
 
-Deployed on Coolify (GTA 6 project) via Dockerfile on port `3000`.
+Apex hosts redirect to www. Deployed on Coolify via Dockerfile on port `3000`.

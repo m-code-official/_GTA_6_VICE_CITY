@@ -3,166 +3,48 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Welcome to Vice City</title>
-    <meta
-      name="description"
-      content="Welcome to Vice City — neon streets, palm trees, and endless summer nights in Leonida."
-    />
+    <title>Contact</title>
+    <meta name="robots" content="noindex, nofollow" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
     />
     <style>
-      :root {
-        --pink: #ff6ad5;
-        --cyan: #00f5ff;
-        --sun: #ffb347;
-        --night: #0a0618;
-        --glass: rgba(255, 255, 255, 0.08);
-      }
-
       * {
         box-sizing: border-box;
         margin: 0;
       }
 
+      html,
+      body {
+        height: 100%;
+      }
+
       body {
         min-height: 100vh;
-        font-family: "Outfit", system-ui, sans-serif;
-        color: #f5f0ff;
-        background: radial-gradient(1200px 600px at 10% -10%, #3d1060, transparent),
-          radial-gradient(900px 500px at 90% 0%, #0e4a6e, transparent),
-          linear-gradient(180deg, #12082a 0%, var(--night) 45%, #05020c 100%);
-        overflow-x: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #000;
+        font-family: "Poppins", sans-serif;
       }
 
-      .grid {
-        position: fixed;
-        inset: 0;
-        background-image: linear-gradient(rgba(255, 106, 213, 0.08) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(0, 245, 255, 0.06) 1px, transparent 1px);
-        background-size: 48px 48px;
-        mask-image: linear-gradient(to bottom, black, transparent 85%);
-        pointer-events: none;
-      }
-
-      main {
-        position: relative;
-        z-index: 1;
-        max-width: 56rem;
-        margin: 0 auto;
-        padding: 4rem 1.5rem 5rem;
-        text-align: center;
-      }
-
-      .badge {
-        display: inline-block;
-        padding: 0.35rem 0.9rem;
-        border: 1px solid rgba(0, 245, 255, 0.35);
-        border-radius: 999px;
-        font-size: 0.75rem;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: var(--cyan);
-        background: var(--glass);
-        backdrop-filter: blur(8px);
-      }
-
-      h1 {
-        margin-top: 1.5rem;
-        font-family: "Bebas Neue", sans-serif;
-        font-size: clamp(3.5rem, 12vw, 7rem);
-        line-height: 0.95;
-        letter-spacing: 0.04em;
-        text-shadow: 0 0 40px rgba(255, 106, 213, 0.45), 0 0 80px rgba(0, 245, 255, 0.25);
-      }
-
-      h1 span {
-        display: block;
-        background: linear-gradient(90deg, var(--pink), var(--sun), var(--cyan));
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-      }
-
-      p.lead {
-        margin: 1.75rem auto 0;
-        max-width: 34rem;
-        font-size: 1.15rem;
-        font-weight: 300;
-        line-height: 1.65;
-        color: rgba(245, 240, 255, 0.82);
-      }
-
-      .cards {
-        display: grid;
-        gap: 1rem;
-        margin-top: 3rem;
-        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
-      }
-
-      .card {
-        padding: 1.25rem 1rem;
-        border-radius: 1rem;
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        background: var(--glass);
-        backdrop-filter: blur(10px);
-      }
-
-      .card strong {
-        display: block;
-        font-size: 0.8rem;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: var(--pink);
-        margin-bottom: 0.35rem;
-      }
-
-      footer {
-        margin-top: 3.5rem;
-        font-size: 0.8rem;
-        color: rgba(245, 240, 255, 0.45);
-      }
-
-      footer a {
-        color: var(--cyan);
+      a {
+        color: #fff;
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        font-weight: 500;
         text-decoration: none;
+        letter-spacing: 0.02em;
+      }
+
+      a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
-    <div class="grid" aria-hidden="true"></div>
-    <main>
-      <p class="badge">Leonida · East Coast</p>
-      <h1>
-        Welcome to
-        <span>Vice City</span>
-      </h1>
-      <p class="lead">
-        Neon on the boulevard, heat on the asphalt, and stories waiting behind every hotel
-        window. This is the classic postcard — Miami fever, 80s synth, and crime glamour under
-        palm shadows.
-      </p>
-      <div class="cards">
-        <article class="card">
-          <strong>Ocean Drive</strong>
-          Art Deco nights &amp; convertible dreams
-        </article>
-        <article class="card">
-          <strong>Vice Port</strong>
-          Smugglers, yachts &amp; radio static
-        </article>
-        <article class="card">
-          <strong>Little Havana</strong>
-          Rum, rhythm &amp; rival crews
-        </article>
-      </div>
-      <footer>
-        Fan tribute · Not affiliated with Rockstar Games ·
-        <a href="https://welcome-to-leonida.com">welcome-to-leonida.com</a>
-      </footer>
-    </main>
+    <a href="mailto:webdevpro009@gmail.com">Contact</a>
   </body>
 </html>
