@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome to Vice City · VI</title>
+    <meta
+      name="description"
+      content="Bienvenue à Vice City — chapitre VI. Leonida vous attend, plus vaste, plus brute, plus cinématographique."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --violet: #8b5cf6;
+        --lime: #a3e635;
+        --rose: #fb7185;
+        --ink: #030712;
+        --panel: rgba(15, 23, 42, 0.72);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        font-family: "Outfit", system-ui, sans-serif;
+        color: #e2e8f0;
+        background: radial-gradient(ellipse at top, #1e1b4b 0%, var(--ink) 55%),
+          linear-gradient(160deg, #0f172a, #020617);
+      }
+
+      .scanlines {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.12;
+        background: repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 2px,
+          rgba(255, 255, 255, 0.03) 2px,
+          rgba(255, 255, 255, 0.03) 4px
+        );
+      }
+
+      main {
+        position: relative;
+        z-index: 1;
+        max-width: 52rem;
+        margin: 0 auto;
+        padding: 4.5rem 1.5rem 5rem;
+      }
+
+      .roman {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(5rem, 18vw, 10rem);
+        line-height: 0.85;
+        letter-spacing: 0.06em;
+        color: transparent;
+        -webkit-text-stroke: 2px rgba(163, 230, 53, 0.85);
+        text-shadow: 0 0 60px rgba(139, 92, 246, 0.55);
+      }
+
+      h1 {
+        margin-top: 0.5rem;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(2.2rem, 7vw, 3.6rem);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 em {
+        font-style: normal;
+        color: var(--rose);
+      }
+
+      p.lead {
+        margin-top: 1.5rem;
+        max-width: 36rem;
+        font-size: 1.1rem;
+        font-weight: 300;
+        line-height: 1.7;
+        color: rgba(226, 232, 240, 0.88);
+      }
+
+      .timeline {
+        margin-top: 2.5rem;
+        padding: 1.5rem;
+        border-radius: 1.25rem;
+        border: 1px solid rgba(139, 92, 246, 0.35);
+        background: var(--panel);
+        backdrop-filter: blur(12px);
+      }
+
+      .timeline h2 {
+        font-size: 0.75rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--lime);
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        display: grid;
+        gap: 0.85rem;
+      }
+
+      li {
+        display: flex;
+        gap: 0.75rem;
+        align-items: flex-start;
+        text-align: left;
+        font-size: 0.98rem;
+      }
+
+      li::before {
+        content: "▸";
+        color: var(--violet);
+        flex-shrink: 0;
+      }
+
+      .cta {
+        display: inline-flex;
+        margin-top: 2.25rem;
+        padding: 0.85rem 1.4rem;
+        border-radius: 999px;
+        border: 1px solid rgba(163, 230, 53, 0.5);
+        color: #ecfccb;
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        background: linear-gradient(135deg, rgba(139, 92, 246, 0.35), rgba(163, 230, 53, 0.15));
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .cta:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 40px rgba(139, 92, 246, 0.35);
+      }
+
+      footer {
+        margin-top: 3rem;
+        font-size: 0.78rem;
+        color: rgba(148, 163, 184, 0.9);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scanlines" aria-hidden="true"></div>
+    <main>
+      <div class="roman" aria-hidden="true">VI</div>
+      <h1>Bienvenue à <em>Vice City</em></h1>
+      <p class="lead">
+        Même skyline, nouvelle époque. Jason &amp; Lucia, Leonida en pleine lumière, et une
+        Vice City repensée pour le cinéma interactif. Ce domaine est la vitrine « chapitre VI » —
+        plus sombre, plus ambitieux, prêt pour la suite.
+      </p>
+      <section class="timeline" aria-labelledby="signals">
+        <h2 id="signals">Signaux depuis Leonida</h2>
+        <ul>
+          <li>Keys, Grassrivers &amp; Port Gellhorn : l’État devient un personnage.</li>
+          <li>Radio, rues vivantes &amp; météo : le monde respire avant la mission.</li>
+          <li>Vice City n’est plus un décor — c’est le terrain de tout ce qui va suivre.</li>
+        </ul>
+      </section>
+      <a class="cta" href="https://welcome-to-leonida.com">Explorer welcome-to-leonida.com</a>
+      <footer>
+        Hommage fan · Non affilié à Rockstar Games ·
+        <a href="https://welcome-to-vice-city.com" style="color: #c4b5fd">version classique</a>
+      </footer>
+    </main>
+  </body>
+</html>
